@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="estilo.css" />
+    <title>DrivenEats</title>
+</head>
+<body>
+<div class="fixo-superior">
+    <p class="Righteous">DrivenEats</p>
+    <p class="Roboto">Sua comida em 6 minutos</p>
+</div>
+<div class="corpo">
+    <p class="primeiro-prato">Primeiro, seu prato</p>
+
+    <div class="pratos-salgados">
+        <div class="prato1" onclick="SelecionarPrato('.prato1')"  data-test ="dish">
+            <img class="foto-do-prato" src="frango_yin_yang.png">
+            <p class="Frango" data-test ="item-name">Frango Xadrez</p>
+            <p class="descriçao-do-prato">Frango ao molho e pouco de salada</p>
+            <p class="valor" data-test ="item-price">R$ 20,00</p>
+        </div>
+        <div class="prato2" onclick="SelecionarPrato('.prato2')"  data-test ="dish">
+            <img class="foto-do-prato" src="frango_yin_yang.png">
+            <p class="Frango" data-test ="item-name">Bife com purê</p>
+            <p class="descriçao-do-prato">Purê de batata, bife ancho e arroz</p>
+            <p class="valor" data-test ="item-price">R$ 11,50</p>
+        </div>
+        <div class="prato3" onclick="SelecionarPrato('.prato3')"  data-test ="dish">
+            <img class="foto-do-prato" src="frango_yin_yang.png">
+            <p class="Frango" data-test ="item-name">Lasanha</p>
+            <p class="descriçao-do-prato">Lasanha, arroz e um pouco de salada</p>
+            <p class="valor" data-test ="item-price">R$ 40,00</p>
+        </div>
+    </div>
+    <p class="Segundo-bebida">Agora, sua bebida</p>
+    <div class="bebidas">
+        <div class="bebida1" onclick="SelecionarBebida('.bebida1')" data-test ="drink">
+            <img class="foto-do-prato" src="coca-cola.png">
+            <p class="bebida">Coca-cola</p>
+            <p class="descriçao-do-prato">Lata 350ml</p>
+            <p class="valor" data-test ="item-price">R$ 7,90</p>
+        </div>
+        <div class="bebida2" onclick="SelecionarBebida('.bebida2')" data-test ="drink">
+            <img class="foto-do-prato" src="coca-cola.png">
+            <p class="bebida" data-test ="item-name">Suco de laranja</p>
+            <p class="descriçao-do-prato">500ml</p>
+            <p class="valor" data-test ="item-price">R$ 20,00</p>
+        </div>
+        <div class="bebida3" onclick="SelecionarBebida('.bebida3')" data-test ="drink">
+            <img class="foto-do-prato" src="coca-cola.png">
+            <p class="bebida" data-test ="item-name">Dolly</p>
+            <p class="descriçao-do-prato">Copo 250ml</p>
+            <p class="valor" data-test ="item-price">R$ 4,90</p>
+        </div>
+    </div>
+    <p class="Terceiro-bebida">Por fim, sua sobremesa</p>
+    <div class="pratos-sobremesa">
+        <div class="sobremesa1"  onclick="SelecionarSobremesa('.sobremesa1')" data-test ="dessert">
+            <img class="foto-do-prato" src="pudim.png">
+            <p class="sobremesa" data-test ="item-name">Pavê</p>
+            <p class="descriçao-do-prato">Apenas pudim</p>
+            <p class="valor" data-test ="item-price">R$ 4,10</p>
+        </div>
+        <div class="sobremesa2" onclick="SelecionarSobremesa('.sobremesa2')" data-test ="dessert">
+            <img class="foto-do-prato" src="pudim.png">
+            <p class="sobremesa" data-test ="item-name">Geleia</p>
+            <p class="descriçao-do-prato">Apenas pudim</p>
+            <p class="valor" data-test ="item-price">R$ 1,99</p>
+        </div>
+        <div class="sobremesa3" onclick="SelecionarSobremesa('.sobremesa3')" data-test ="dessert">
+            <img class="foto-do-prato" src="pudim.png">
+            <p class="sobremesa" data-test ="item-name">Bolo</p>
+            <p class="descriçao-do-prato">Apenas pudim</p>
+            <p class="valor" data-test ="item-price">R$ 10,00</p>
+        </div>
+    </div>
+</div>
+<div class="rodape">
+    <button class="selecionar" onclick=" chamaZap()"  data-test ="order-btn">
+        <p class="escrito">Selecione os 3 itens<br> para fechar o pedido</p>
+       
+    </button>
+</div>
+
+
+<script src="script.js"></script>
+</body>
+</html>
