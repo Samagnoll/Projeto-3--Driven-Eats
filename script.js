@@ -18,7 +18,7 @@ function habilitarBotao(){
             const habilitarEContinuar = document.querySelector('.selecionar');
             habilitarEContinuar.classList.add('botaoHabilitado');
             const mudarEscrito = document.querySelector('.escrito');
-            mudarEscrito.innerHTML = 'Finalizar pedido';
+            mudarEscrito.innerHTML = 'Fechar pedido';
              }
        }
     }
